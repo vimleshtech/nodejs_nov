@@ -1,0 +1,386 @@
+a=11
+11
+a=11
+11
+typeof(a)
+"number"
+a=111.233
+111.233
+typeof(a)
+"number"
+d='abcd22334'
+"abcd22334"
+typeof(d)
+"string"
+d="abcd22334"
+"abcd22334"
+typeof(d)
+"string"
+a=[11,2222,333,4444,555]
+(5) [11, 2222, 333, 4444, 555]
+typeof(a)
+"object"
+a={id:101,name:'raman'}
+{id: 101, name: "raman"}
+typeof(a)
+"object"
+a=[11,2222,333,4444,555]
+(5) [11, 2222, 333, 4444, 555]
+a[0]
+11
+a[1]
+2222
+a={id:101,name:'raman'}
+{id: 101, name: "raman"}
+a.id
+101
+a.name
+"raman"
+test = function hello(){ 
+console.log("hello");
+}
+ƒ hello(){ 
+console.log("hello");
+}
+typeof(test)
+"function"
+test()
+VM403:2 hello
+undefined
+function f1() {
+x =100;
+}
+undefined
+f1()
+undefined
+x
+100
+function f2() {
+var d =100;
+}
+undefined
+f2()
+undefined
+d
+"abcd22334"
+function f2() {
+var d2 =100;
+}
+undefined
+f2()
+undefined
+d2
+VM552:1 Uncaught ReferenceError: d2 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM552:1
+function f2() {
+var d2 =100;
+console.log(d2);
+}
+undefined
+f2()
+VM579:3 100
+undefined
+d2
+VM596:1 Uncaught ReferenceError: d2 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM596:1
+function f2() {
+var d2 =100;
+console.log(d2);
+}
+undefined
+function f3(){
+for(let i=0; i<10;i++){
+    {
+		console.log(d2);}
+
+}
+VM720:6 Uncaught SyntaxError: Unexpected end of input
+function f3(){
+for(let i=0; i<10;i++){
+	
+		console.log(d2);}
+
+}
+undefined
+function f3(){
+for(let i=0; i<10;i++){
+	
+		console.log(i);
+}
+
+}
+undefined
+f3()
+VM756:4 0
+VM756:4 1
+VM756:4 2
+VM756:4 3
+VM756:4 4
+VM756:4 5
+VM756:4 6
+VM756:4 7
+VM756:4 8
+VM756:4 9
+undefined
+function f3(){
+for(let i=0; i<10;i++){
+	
+		console.log(i);
+}
+
+}
+undefined
+i
+VM786:1 Uncaught ReferenceError: i is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM786:1
+function f3(){
+for(let i=0; i<10;i++){
+	
+		console.log(i);
+}
+console.log(i);
+
+}
+undefined
+f3()
+VM809:4 0
+VM809:4 1
+VM809:4 2
+VM809:4 3
+VM809:4 4
+VM809:4 5
+VM809:4 6
+VM809:4 7
+VM809:4 8
+VM809:4 9
+VM809:6 Uncaught ReferenceError: i is not defined
+    at f3 (<anonymous>:6:13)
+    at <anonymous>:1:1
+f3 @ VM809:6
+(anonymous) @ VM819:1
+function f3(){
+
+     for(let i=0; i<10;i++)
+	{
+	
+		console.log(i);
+	}	
+console.log(i);
+
+}
+undefined
+i=1
+1
+console.log(i++)
+VM873:1 1
+undefined
+j=1
+1
+console.log(++j)
+VM917:1 2
+undefined
+function gt(a,b){
+if(a>b){
+console.log("a is greater ");
+}
+else{
+console.log(" b is greater ");
+}
+}
+undefined
+gt(11,33)
+VM1052:6  b is greater 
+undefined
+gt(110,33)
+VM1052:3 a is greater 
+undefined
+a=2
+2
+function square(a*a)
+VM1141:1 Uncaught SyntaxError: Unexpected token *
+a=2 
+2
+console.log(a*a)
+VM1215:1 4
+undefined
+function square1(g*)
+VM1256:1 Uncaught SyntaxError: Unexpected token *
+g=5
+5
+console.log(g*g)
+VM1307:1 25
+undefined
+function square1(g){
+console.log(a*a);
+}
+undefined
+square1(3)
+VM1364:2 4
+undefined
+function square1(g){
+console.log(g*g);
+}
+undefined
+square1(3)
+VM1415:2 9
+undefined
+square1(5)
+VM1415:2 25
+undefined
+square1(50)
+VM1415:2 2500
+undefined
+function cube (h)
+{
+    console.log(h*h*h)
+    ;
+}
+undefined
+ cube(7)
+VM1524:3 343
+undefined
+function(equation)
+{
+VM1589:1 Uncaught SyntaxError: Unexpected token (
+console.log(a*a*a)
+VM1666:1 8
+undefined
+function(equation)
+{
+    console.log(a*a*a + b*b*b + c*c*c = d*d*d)
+VM1827:1 Uncaught SyntaxError: Unexpected token (
+if(a*a*a + b*b*b + c*c*c = d*d*d)
+VM1905:1 Uncaught ReferenceError: Invalid left-hand side in assignment
+{
+    console.log("equation satisfied")
+}
+VM1955:2 equation satisfied
+undefined
+equation(2 + 4 + 8)
+VM1993:1 Uncaught ReferenceError: equation is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1993:1
+function(equation)
+{
+    if(a*a*a + b*b*b + c*c*c == d*d*d){
+        console.log("condition matched ");
+    }else {
+		console.log("condition not match");
+    }
+VM2121:1 Uncaught SyntaxError: Unexpected token (
+function(equation)
+{
+    if(a*a*a + b*b*b + c*c*c == d*d*d){
+        console.log("condition matched ");
+    }else {
+		console.log("condition not match");
+    }
+}
+VM2130:1 Uncaught SyntaxError: Unexpected token (
+function a7(equation)
+{
+    if(a*a*a + b*b*b + c*c*c == d*d*d){
+        console.log("condition matched ");
+    }else {
+		console.log("condition not match");
+    }
+}
+undefined
+function a7(a,b,c)
+{
+    if(a*a*a + b*b*b + c*c*c == d*d*d){
+        console.log("condition matched ");
+    }else {
+		console.log("condition not match");
+    }
+}
+undefined
+function a7(a,b,c,d)
+{
+    if(a*a*a + b*b*b + c*c*c == d*d*d){
+        console.log("condition matched ");
+    }else {
+		console.log("condition not match");
+    }
+}
+undefined
+a7(2,3,4,5,6)
+VM2183:6 condition not match
+undefined
+a7(2,3,4,5)
+VM2183:6 condition not match
+undefined
+a7(3,4,5,6)
+VM2183:4 condition matched 
+undefined
+a7(2,3,4,5)
+VM2183:6 condition not match
+undefined
+function salary(x,hra,dra)
+
+if(salary >5000 )
+VM2381:3 Uncaught SyntaxError: Unexpected token if
+{
+    console.log( " hra is 10% ");
+}
+VM2434:2  hra is 10% 
+undefined
+function salary(x,hra,dra)
+
+if(salary >5000 )
+VM2440:3 Uncaught SyntaxError: Unexpected token if
+{
+    if (salary > 5000){
+        {console.log( " hra is 10 % ");
+        else
+VM2537:4 Uncaught SyntaxError: Unexpected token else
+console.log("
+VM2764:1 Uncaught SyntaxError: Invalid or unexpected token
+function sal(amt)
+{
+
+	if(amt>=5000 && amt<=10000){
+
+		console.log(amt*.10);
+		console.log(amt*.05);
+	}
+	else if(amt>=5000 && amt<=10000){
+	
+
+		console.log(amt*.15);
+		console.log(amt*.08);
+
+	}
+
+}
+undefined
+sal(12000)
+undefined
+function sal(amt)
+{
+
+	if(amt>=5000 && amt<=10000){
+
+		console.log(amt*.10);
+		console.log(amt*.05);
+	}
+	else if(amt>=10000 && amt<=15000){
+	
+
+		console.log(amt*.15);
+		console.log(amt*.08);
+
+	}
+
+}
+undefined
+sal(12000)
+VM2809:12 1800
+VM2809:13 960
+undefined
+sal(7000)
+VM2809:6 700
+VM2809:7 350
